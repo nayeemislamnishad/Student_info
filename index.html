@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Directory</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .student-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+    .student-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .student-card:hover {
+      transform: translateY(-5px);
+    }
+    .student-photo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff6600;
+      margin-bottom: 10px;
+    }
+    .student-info {
+      font-size: 14px;
+      color: #444;
+      margin: 5px 0;
+    }
+    .student-phone a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .student-phone a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Directory</h1>
+  <div class="student-grid">
+    <!-- Student Card Example -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/100" alt="Student Photo" class="student-photo" />
+      <div class="student-info"><strong>Name:</strong> John Doe</div>
+      <div class="student-info"><strong>Reg. No:</strong> 123456</div>
+      <div class="student-info"><strong>Roll:</strong> 01</div>
+      <div class="student-phone"><strong>Phone:</strong> <a href="tel:01234567890">01234-567890</a></div>
+    </div>
+
+    <!-- Repeat this block for all 70 students -->
+    <!-- Example 2 -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/100" alt="Student Photo" class="student-photo" />
+      <div class="student-info"><strong>Name:</strong> Jane Smith</div>
+      <div class="student-info"><strong>Reg. No:</strong> 654321</div>
+      <div class="student-info"><strong>Roll:</strong> 02</div>
+      <div class="student-phone"><strong>Phone:</strong> <a href="tel:01987654321">01987-654321</a></div>
+    </div>
+
+    <!-- Add more student-card blocks here -->
+
+  </div>
+</body>
+</html>
